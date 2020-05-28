@@ -1,0 +1,197 @@
+
+
+{
+    "id": 1,
+    "packName": "En Kullanışlı 50 Fiil",
+    "packDescription": "Günlük hayatda ve metinlerde mutlaka karşına çıkacak fiiler",
+    "units": [
+        {
+            "word": "Go",
+            "description": "Gitmek"
+        },
+        {
+            "word": "Come",
+            "description": "Gelmek"
+        },
+        {
+            "word": "Wake",
+            "description": "Uyanmak"
+        },
+        {
+            "word": "Sleep",
+            "description": "Uyumak"
+        },
+        {
+            "word": "Walk",
+            "description": "Yürümek"
+        },
+        {
+            "word": "Hold",
+            "description": "Tutmak"
+        },
+        {
+            "word": "Swim",
+            "description": "Yüzmek"
+        },
+        {
+            "word": "Pull",
+            "description": "Çekmek"
+        },
+        {
+            "word": "Push",
+            "description": "İtmek"
+        },
+        {
+            "word": "Paint",
+            "description": "Çizmek"
+        },
+        {
+            "word": "Arrive",
+            "description": "Varmak"
+        },
+        {
+            "word": "Belive",
+            "description": "İnanmak"
+        },
+        {
+            "word": "Bite",
+            "description": "Isırmak"
+        },
+        {
+            "word": "Buy",
+            "description": "Satın Almak"
+        },
+        {
+            "word": "Call",
+            "description": "Aramak"
+        },
+        {
+            "word": "Catch",
+            "description": "Yakalamak"
+        },
+        {
+            "word": "Decide",
+            "description": "Karak Vermek"
+        },
+        {
+            "word": "Die",
+            "description": "Ölmek"
+        },
+        {
+            "word": "Dig",
+            "description": "Kazmak"
+        },
+        {
+            "word": "Draw",
+            "description": "Çizmek"
+        },
+        {
+            "word": "Dream",
+            "description": "Rüya Görmek"
+        },
+        {
+            "word": "Eat",
+            "description": "Yemek"
+        },
+        {
+            "word": "Explain",
+            "description": "Açıklamak"
+        },
+        {
+            "word": "Feed",
+            "description": "Beslemek"
+        },
+        {
+            "word": "Fall",
+            "description": "Düşmek"
+        },
+        {
+            "word": "Make",
+            "description": "Yapmak"
+        },
+        {
+            "word": "Mention",
+            "description": "Bahsetmek"
+        },
+        {
+            "word": "Move",
+            "description": "Hareket Etmek"
+        },
+        {
+            "word": "Open",
+            "description": "Açmak"
+        },
+        {
+            "word": "Order",
+            "description": "Emir Vermek"
+        },
+        {
+            "word": "Pick",
+            "description": "Seçmek"
+        },
+        {
+            "word": "Put",
+            "description": "Koymak"
+        },
+        {
+            "word": "Quit",
+            "description": "Bırakmak"
+        },
+        {
+            "word": "Read",
+            "description": "Okumak"
+        },
+        {
+            "word": "Refuse",
+            "description": "Reddetmek"
+        },
+        {
+            "word": "Remember",
+            "description": "Hatırlamak"
+        },
+        {
+            "word": "Run",
+            "description": "Koşmak"
+        },
+        {
+            "word": "Sell",
+            "description": "Satmak"
+        },
+        {
+            "word": "Shake",
+            "description": "Sallamak"
+        },
+        {
+            "word": "Show",
+            "description": "Göstermek"
+        },
+        {
+            "word": "Speak",
+            "description": "Konuşmak"
+        },
+        {
+            "word": "Teach",
+            "description": "Ögretmek"
+        },
+        {
+            "word": "Tell",
+            "description": "Söylemek"
+        },
+        {
+            "word": "Want",
+            "description": "İstemek"
+        },
+        {
+            "word": "Work",
+            "description": "Çalışmak"
+        },
+        {
+            "word": "Wish",
+            "description": "Dilemek"
+        },
+        {
+            "word": "Write",
+            "description": "Yazmak"
+        }
+    ]
+}
