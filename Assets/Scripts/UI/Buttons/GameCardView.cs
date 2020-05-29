@@ -1,18 +1,34 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class GameCardView : MonoBehaviour
+using UnityEngine.UI;
+using System;
+using UnityEngine.EventSystems;
+//Jenerik class a çevir cardView ları
+public class GameCardView : MonoBehaviour,IPointerClickHandler
 {
-    // Start is called before the first frame update
-    void Start()
+    public Text gameNameTextView;
+
+    public Text gameDescriptionTextView;
+
+    public Action<BaseGame> OnCardViewClicked;
+
+    private BaseGame game;
+
+    public void SetGameCardView(BaseGame baseGame)
     {
-        
+        game = baseGame;
+
+        gameNameTextView.text = baseGame.gameName;
+
+        gameDescriptionTextView.text = baseGame.gameDescription;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OnPointerClick(PointerEventData eventData)
     {
-        
+        if (OnCardViewClicked != null)
+        {
+            OnCardViewClicked.Invoke(game);
+        }
     }
 }

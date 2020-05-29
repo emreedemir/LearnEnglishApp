@@ -11,6 +11,8 @@ public class SpaceFilledButton : MonoBehaviour,IDropHandler
 
     public Text descriptionText;
 
+    public bool IsFilled;
+
     public void SetFilledButton(string description)
     {
         descriptionText.text = description;
@@ -23,5 +25,15 @@ public class SpaceFilledButton : MonoBehaviour,IDropHandler
         {
             OnWordDragged.Invoke(eventData.pointerDrag.gameObject.GetComponent<SpaceFillButton>(),this);
         } 
+    }
+
+    public void MakeCorrectAnimation()
+    {
+        throw new NotImplementedException();
+    }
+
+    public void MakeFalseAnimation()
+    {
+        throw new NotImplementedException();
     }
 }

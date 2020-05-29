@@ -8,6 +8,12 @@ public class MemorizeMenu : MonoBehaviour
 
     public Transform listViewParent;
 
+    public FloatingScreenController floatingScreenController;
+
+    SpaceFillGame spaceFillGame;
+
+    public NormalButton backMenuButton;
+
     private void Start()
     {
         List<Pack> allPacks = FindObjectOfType<ResourcesController>().GetAllWordMemorizePack();
@@ -23,10 +29,19 @@ public class MemorizeMenu : MonoBehaviour
             newCardViewButton.OnWordPackCardViewClicked += OnCardViewPackClicked;
 
         });
+
+      //  backMenuButton.OnNormalButtonClicked += BackToMainMenu;
+    }
+
+    private void BackToMainMenu()
+    {
+
+
     }
 
     public void OnCardViewPackClicked(Pack pack)
     {
-        Debug.Log("Yönlendir buradan kelime ezberleme ekranına");
+        spaceFillGame.gameObject.SetActive(true);
+        floatingScreenController.FloatPanels(this.transform, spaceFillGame.transform,FloatType.sub);
     }
 }
