@@ -21,20 +21,18 @@ public class SpaceFillGame : BaseGame
 
     public int currentWordSetIndex = 0;
 
-    private void Start()
+    public void InitiliazeSpaceFillGame()
     {
         spaceFillPair = new Dictionary<SpaceFillButton, SpaceFilledButton>();
 
-        SpaceFilledButton[] filled = filledButtonParents.GetComponentsInChildren<SpaceFilledButton>();
+        List<SpaceFilledButton> filled = filledButtonParents.GetComponentsInChildren<SpaceFilledButton>().ToList();
 
         List<SpaceFillButton> fill = fillButtonParents.gameObject.GetComponentsInChildren<SpaceFillButton>().ToList();
 
-        Debug.Log(fill.Count+" " +filled.Length);
-
         using (var fillButtons = fill.GetEnumerator())
-        using (var filledButtons = filled.ToList().GetEnumerator())
+        using (var filledButtons = filled.GetEnumerator())
         {
-            while(filledButtons.MoveNext() &&fillButtons.MoveNext())
+            while (filledButtons.MoveNext() && fillButtons.MoveNext())
             {
                 spaceFillPair.Add(fillButtons.Current, filledButtons.Current);
             }

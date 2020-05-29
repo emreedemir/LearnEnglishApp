@@ -24,7 +24,7 @@ public class FloatingScreenController : MonoBehaviour
 
             iTween.MoveTo(floatingScreenCome.gameObject, floatedPositionCenter.position, 1f);
 
-            yield return new WaitForSeconds(1);
+            yield return new WaitUntil(() =>floatingScreenGo.transform.position == floatedPositionGoAndCome.position);
         }
         else
         {
@@ -34,7 +34,8 @@ public class FloatingScreenController : MonoBehaviour
 
             yield return new WaitForSeconds(1);
 
-        }       
+        }
+        floatingScreenGo.transform.gameObject.SetActive(false);
     }
 }
 public enum FloatType

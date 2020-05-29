@@ -10,8 +10,14 @@ public class GamesMenu : MonoBehaviour
 
     public Transform listViewParent;
 
+    public GameController gameController;
+
+    public FloatingScreenController floatingScreenController;
+
     private void Start()
     {
+        gameController = FindObjectOfType<GameController>();
+        floatingScreenController = FindObjectOfType<FloatingScreenController>();
         RenderGameCardViews();
     }
 
@@ -20,16 +26,24 @@ public class GamesMenu : MonoBehaviour
         allGames.ForEach(delegate (BaseGame baseGame)
         {
 
-
             Debug.Log("Cad view olulşturuldu");
             GameCardView newGameCardView = Instantiate(gameCardView);
 
+            newGameCardView.SetGameCardView(baseGame);
+
             newGameCardView.transform.SetParent(listViewParent);
+
+            newGameCardView.OnCardViewClicked += OnGameCardViewClicked;
         });
     }
 
     public void OnGameCardViewClicked(BaseGame baseGame)
     {
-        Debug.Log("CardView clicked");
+        gameController.InitiliazeGame(baseGame);
+
+        if (floatingScreenController != null)
+            floatingScreenController.FloatPanels(this.transform, baseGame.transform, FloatType.sub);
+        else
+            Debug.Log("Floating SCreen cant be found");
     }
 }
